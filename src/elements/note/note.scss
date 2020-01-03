@@ -1,0 +1,45 @@
+.note {
+  position: absolute;
+  width: 150px;
+
+  &.note_view-mode {
+    width: auto;
+
+    .note__viewer {
+      display: block;
+    }
+
+    .note__editor {
+      display: none;
+    }
+  }
+
+  .note__ok-button {
+    position: relative;
+    left: -2px;
+  }
+
+  .note__edit-button {
+    display: none;
+    position: relative;
+    left: -2px;
+  }
+
+  .note__viewer:hover .note__edit-button{
+    display: inline-block;
+  }
+  
+  .note__editor-input {
+    width: 100px;
+  }
+
+  .note__viewer {
+    display: none;
+
+    .note__value {
+      display: inline-block;
+      padding: 3px 4px 2px 4px;
+      background-color: #f8f8f8;
+    }
+  }
+}
